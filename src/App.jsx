@@ -123,7 +123,7 @@ function App() {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/tasks');
+      const response = await axios.get('https://task-manager-backend-three-roan.vercel.app/tasks');
       setTasks(response.data);
     } catch (error) {
       console.error('Error fetching tasks', error);
@@ -132,7 +132,7 @@ function App() {
 
   const handleAddTask = async (category) => {
     try {
-      await axios.post('http://localhost:5000/tasks', {
+      await axios.post('https://task-manager-backend-three-roan.vercel.app/tasks', {
         title: newTask[category].title,
         description: newTask[category].description,
         category: category,
@@ -158,7 +158,7 @@ function App() {
 
   const handleSaveEdit = async () => {
     try {
-      await axios.put(`http://localhost:5000/tasks/${editTaskId}`, {
+      await axios.put(`https://task-manager-backend-three-roan.vercel.app/tasks/${editTaskId}`, {
         title: editTaskTitle,
         description: editTaskDescription,
       });
@@ -171,7 +171,7 @@ function App() {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      await axios.delete(`http://localhost:5000/tasks/${taskId}`);
+      await axios.delete(`https://task-manager-backend-three-roan.vercel.app/tasks/${taskId}`);
       fetchTasks();
     } catch (error) {
       console.error('Error deleting task', error);
@@ -203,7 +203,7 @@ function App() {
     setTasks(updatedTasks);
 
     try {
-      await axios.put(`http://localhost:5000/tasks/${draggableId}`, {
+      await axios.put(`https://task-manager-backend-three-roan.vercel.app/tasks/${draggableId}`, {
         category: destination.droppableId,
       });
       fetchTasks();

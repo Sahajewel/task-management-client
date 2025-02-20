@@ -271,11 +271,11 @@ function App() {
                               </div>
                             ) : (
                               <div>
-                                {task.title}
+                                Title: {task.title}
                                 <TaskDetails>
-                                  {task.description}
+                                  Description: {task.description}
                                 </TaskDetails>
-                                <TaskTimestamp>{formatDate(task.timestamp)}</TaskTimestamp>
+                                <TaskTimestamp>Time: {formatDate(task.timestamp)}</TaskTimestamp>
                                 <button onClick={() => handleEditTask(task)}>Edit</button>
                                 <button onClick={() => handleDeleteTask(task._id)}>Delete</button>
                               </div>

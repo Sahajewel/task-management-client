@@ -22,3 +22,15 @@
 5. "react-beautiful-dnd": "^13.1.1",
 6. "react-dom": "^18.3.1",
 7. "styled-components": "^6.1.15"
+
+## Installation ##
+
+### Follow these steps to run the project locally: ###
+### 1. Clone the Repository: ###
+git clone https://github.com/Sahajewel/task-management-client.git
+### 2. Navigate to the Project Directory: ###
+task-management-client
+### Install Dependencies: ###
+npm install
+### Start the Development Server: ###
+npm start

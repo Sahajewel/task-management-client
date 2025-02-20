@@ -12,4 +12,15 @@
 
 4. Styled-Components
 
-5. Drag and Drop (react-beautiful-dnd, @hello-pangea/dnd) ###
+5. Drag and Drop (react-beautiful-dnd, @hello-pangea/dnd) 
+
+### Dependencies ###
+{
+  "@hello-pangea/dnd": "^18.0.1",
+  "axios": "^1.7.9",
+  "firebase": "^11.3.1",
+  "react": "^18.3.1",
+  "react-beautiful-dnd": "^13.1.1",
+  "react-dom": "^18.3.1",
+  "styled-components": "^6.1.15"
+}
